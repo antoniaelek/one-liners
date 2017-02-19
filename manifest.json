@@ -4,6 +4,9 @@
 	"name": "One-Liners",
 	"description": "Get a funny one liner each time you open up a new tab.",
 	"version": "0.5",
+	"browser_action": {
+		"default_icon": "icon.png"
+	},
 	"permissions" : ["management"],
 	"chrome_url_overrides" : {
 		"newtab": "newtab.html"
