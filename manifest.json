@@ -1,0 +1,11 @@
+{
+	"manifest_version": 2,
+
+	"name": "One-Liners",
+	"description": "Get a funny one liner each time you open up a new tab.",
+	"version": "0.5",
+	"permissions" : ["management"],
+	"chrome_url_overrides" : {
+		"newtab": "newtab.html"
+	}
+ }
