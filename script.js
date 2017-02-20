@@ -1,6 +1,21 @@
 document.addEventListener("DOMContentLoaded", function() {
 	chrome.management.getAll(getAllCallback);
+	var oldtime = getTime();
+	setInterval(updateDateTime, 2000);
 });
+
+function getTime()  {
+  var d = new Date();
+  return d.getTime();
+}
+
+function updateDateTime() {
+	var currDate = new Date().toLocaleDateString();
+	$('#date').html(currDate);
+	
+	var currTime = new Date().toLocaleTimeString('en-US', { hour12: true, hour: "numeric", minute: "numeric"});
+	$('#time').html(currTime);
+}
 
 var getAllCallback = function(list) {
 	// get image
@@ -14,7 +29,7 @@ var getAllCallback = function(list) {
 	
 	// get current time
 	var time = document.getElementById("time");
-	var currTime = new Date().toLocaleTimeString('en-US', { hour12: true, hour: "numeric", minute: "numeric"});
+	var currTime = new Date().toLocaleTimeString('en-US', { hour12: true, hour: "numeric", minute: "numeric", second: "numeric"});
 	time.appendChild(document.createTextNode(currTime));
 	
 	// get quote
