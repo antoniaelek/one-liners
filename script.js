@@ -1,13 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 	chrome.management.getAll(getAllCallback);
-	var oldtime = getTime();
 	setInterval(updateDateTime, 2000);
 });
-
-function getTime()  {
-  var d = new Date();
-  return d.getTime();
-}
 
 function updateDateTime() {
 	var currDate = new Date().toLocaleDateString();
