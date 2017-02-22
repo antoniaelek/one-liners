@@ -12,14 +12,14 @@ function updateDateTime() {
 }
 
 var getAllCallback = function(list) {
-	var len = 1013;
-	var d = new Date();
-	var halfHour = d.getMinutes() >= 30 ? 'half past' : '';
-	Math.seedrandom(d.toLocaleDateString() + ',' + halfHour + d.getHours());
-	var randImg = Math.floor(Math.random()*len);
+	//var len = 1013;
+	//var d = new Date();
+	//var halfHour = d.getMinutes() >= 30 ? 'half past' : '';
+	//Math.seedrandom(d.toLocaleDateString() + ',' + halfHour + d.getHours());
+	//var randImg = Math.floor(Math.random()*len);
 	
 	// get image
-	var imgUrl = "https://unsplash.it/"+screen.width+"/"+screen.height+"?image="+randImg;
+	var imgUrl = "https://source.unsplash.com/"+screen.width+"x"+screen.height+"/daily";
 	document.body.style.background = 'url('+imgUrl+') no-repeat center center'
 	
 	// get quote
@@ -37,6 +37,6 @@ var getAllCallback = function(list) {
 	
 	// get current time
 	var time = document.getElementById("time");
-	var currTime = new Date().toLocaleTimeString('en-US', { hour12: true, hour: "numeric", minute: "numeric", second: "numeric"});
+	var currTime = new Date().toLocaleTimeString('en-US', { hour12: true, hour: "numeric", minute: "numeric"});
 	time.appendChild(document.createTextNode(currTime));
 };
