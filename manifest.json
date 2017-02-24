@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 
 	"name": "One-Liners",
-	"description": "Get a funny one liner each time you open up a new tab.",
+	"description": "Get a daily wallpaper and funny one liner on new tab.",
 	"version": "0.5",
 	"browser_action": {
 		"default_icon": "icon128.png"
