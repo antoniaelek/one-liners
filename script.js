@@ -6,22 +6,18 @@ document.addEventListener("DOMContentLoaded", function() {
 function updateDateTime() {
 	var currDate = new Date().toLocaleDateString();
 	$('#date').html(currDate);
-	
+
 	var currTime = new Date().toLocaleTimeString('en-US', { hour12: true, hour: "numeric", minute: "numeric"});
 	$('#time').html(currTime);
 }
 
 var getAllCallback = function(list) {
-	//var len = 1013;
-	//var d = new Date();
-	//var halfHour = d.getMinutes() >= 30 ? 'half past' : '';
-	//Math.seedrandom(d.toLocaleDateString() + ',' + halfHour + d.getHours());
-	//var randImg = Math.floor(Math.random()*len);
-	
+	Math.seedrandom(new Date().toLocaleDateString());
+
 	// get image
 	var imgUrl = "https://source.unsplash.com/"+screen.width+"x"+screen.height+"/daily";
 	document.body.style.background = 'url('+imgUrl+') no-repeat center center'
-	
+
 	// get quote
 	$.get("quotes.json", function(data){
 		var quotes = data.quotes;
@@ -29,12 +25,12 @@ var getAllCallback = function(list) {
 		var quote = document.getElementById("quote");
 		quote.appendChild(document.createTextNode(quoteStr));
 	}, "json");
-	
+
 	// get current date
 	var date = document.getElementById("date");
 	var currDate = new Date().toLocaleDateString();
 	date.appendChild(document.createTextNode(currDate));
-	
+
 	// get current time
 	var time = document.getElementById("time");
 	var currTime = new Date().toLocaleTimeString('en-US', { hour12: true, hour: "numeric", minute: "numeric"});
