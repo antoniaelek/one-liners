@@ -15,7 +15,7 @@ var getAllCallback = function(list) {
 	Math.seedrandom(new Date().toLocaleDateString());
 
 	// get image
-	var imgUrl = "https://source.unsplash.com/"+screen.width+"x"+screen.height+"/daily";
+	var imgUrl = "https://source.unsplash.com/category/nature/"+screen.width+"x"+screen.height+"/daily";
 	document.body.style.background = 'url('+imgUrl+') no-repeat center center'
 
 	// get quote
