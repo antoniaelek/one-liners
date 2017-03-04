@@ -1,3 +1,5 @@
-# *One-Liners* Chrome NewTab Extension
+# *One-Liners* 
 
-- images from [unplash API](https://source.unsplash.com/)
+- new tab extension for chrome
+- displays quote, date and time
+- wallpapers from [unplash](https://source.unsplash.com/)
