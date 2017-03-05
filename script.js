@@ -14,9 +14,19 @@ function updateDateTime() {
 var getAllCallback = function(list) {
 	Math.seedrandom(new Date().toLocaleDateString());
 
+	var downloadingImage = new Image();
+	downloadingImage.onload = function(){
+	    //image.src = this.src;
+			document.body.style.background = 'url('+downloadingImage.src+') repeat center center';
+			document.body.style.backgroundSize = 'cover';
+			$('.to-hide').hide();
+			$('.hidden').show();
+	};
+	downloadingImage.src = "https://source.unsplash.com/"+screen.width+"x"+screen.height+"/daily";
+
 	// get image
-	var imgUrl = "https://source.unsplash.com/"+screen.width+"x"+screen.height+"/daily";
-	document.body.style.background = 'url('+imgUrl+') no-repeat center center'
+	//var imgUrl = "https://source.unsplash.com/"+screen.width+"x"+screen.height+"/daily";
+	//document.body.style.background = 'url('+imgUrl+') no-repeat center center'
 
 	// get quote
 	$.get("quotes.json", function(data){
