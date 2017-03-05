@@ -17,8 +17,8 @@ var getAllCallback = function(list) {
 	var downloadingImage = new Image();
 	downloadingImage.onload = function(){
 	    //image.src = this.src;
-			document.body.style.background = 'url('+downloadingImage.src+') repeat center center';
-			document.body.style.backgroundSize = 'cover';
+			document.getElementById("hidden").style.background = 'url('+downloadingImage.src+') repeat center center';
+			document.getElementById("hidden").style.backgroundSize = 'cover';
 			$('.to-hide').hide();
 			$('.hidden').show();
 	};
