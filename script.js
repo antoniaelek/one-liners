@@ -22,10 +22,6 @@ var getAllCallback = function(list) {
 	};
 	downloadingImage.src = "https://source.unsplash.com/"+screen.width+"x"+screen.height+"/daily";
 
-	// get image
-	//var imgUrl = "https://source.unsplash.com/"+screen.width+"x"+screen.height+"/daily";
-	//document.body.style.background = 'url('+imgUrl+') no-repeat center center'
-
 	// get quote
 	$.get("quotes.json", function(data){
 		var quotes = data.quotes;
