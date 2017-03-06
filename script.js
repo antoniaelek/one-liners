@@ -16,11 +16,9 @@ var getAllCallback = function(list) {
 
 	var downloadingImage = new Image();
 	downloadingImage.onload = function(){
-	    //image.src = this.src;
 			document.getElementById("hidden").style.background = 'url('+downloadingImage.src+') repeat center center';
 			document.getElementById("hidden").style.backgroundSize = 'cover';
-			$('.to-hide').hide();
-			$('.hidden').show();
+			$('#hidden').show();
 	};
 	downloadingImage.src = "https://source.unsplash.com/"+screen.width+"x"+screen.height+"/daily";
 
