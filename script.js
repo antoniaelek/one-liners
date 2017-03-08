@@ -20,7 +20,7 @@ var getAllCallback = function(list) {
 			document.getElementById("hidden").style.backgroundSize = 'cover';
 			$('#hidden').show();
 	};
-	downloadingImage.src = "https://source.unsplash.com/"+screen.width+"x"+screen.height+"/daily";
+	downloadingImage.src = "https://source.unsplash.com/category/nature/"+screen.width+"x"+screen.height+"/daily";
 
 	// get quote
 	$.get("quotes.json", function(data){
