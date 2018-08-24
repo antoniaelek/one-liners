@@ -12,7 +12,10 @@ function updateDateTime() {
 }
 
 var getAllCallback = function(list) {
-	Math.seedrandom(new Date().toLocaleDateString());
+	var seed = new Date();
+	seed.setMinutes(0);
+	seed.setSeconds(0);
+	Math.seedrandom(seed.toUTCString());
 
 	var downloadingImage = new Image();
 	downloadingImage.onload = function(){
@@ -20,7 +23,7 @@ var getAllCallback = function(list) {
 			document.getElementById("hidden").style.backgroundSize = 'cover';
 			$('#hidden').show();
 	};
-	downloadingImage.src = "https://source.unsplash.com/featured/"+screen.width+"x"+screen.height+"/daily/?landscape";
+	downloadingImage.src = "https://source.unsplash.com/featured/"+screen.width+"x"+screen.height+"/daily/?simple,nature	";
 
 	// get quote
 	$.get("quotes.json", function(data){
