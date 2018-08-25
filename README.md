@@ -6,8 +6,13 @@
 
 ## Get it
 
-[![Chrome](https://raw.githubusercontent.com/antoniaelek/one-liners/master/img/button-chrome.png)](https://chrome.google.com/webstore/detail/ibccdjmfddleamjkkmemddoppdepaojp)
-[![Firefox](https://raw.githubusercontent.com/antoniaelek/one-liners/master/img/button-firefox.png)](https://addons.mozilla.org/en-US/firefox/addon/one-liners/)
+<a href="https://chrome.google.com/webstore/detail/ibccdjmfddleamjkkmemddoppdepaojp" >
+  <img src="https://raw.githubusercontent.com/antoniaelek/one-liners/master/img/button-chrome.png" alt="chrome" width="125"/>
+</a>
+
+<a href="https://addons.mozilla.org/en-US/firefox/addon/one-liners/" >
+  <img src="https://raw.githubusercontent.com/antoniaelek/one-liners/master/img/button-firefox.png" alt="firefox" width="125"/>
+</a>
 
 ## Screenshot
 
