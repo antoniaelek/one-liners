@@ -1,4 +1,4 @@
-# One-Liners Chrome New Tab Extension
+# One-Liners Browser New Tab Extension
 
 - Displays a random funny quote and current date and time
 - Totally inspired by [Momentum](https://momentumdash.com/)
@@ -6,7 +6,7 @@
 
 ## Screenshot
 
-![Screenshot](https://raw.githubusercontent.com/antoniaelek/one-liners/master/img/readme-1.PNG)
+![Screenshot](https://raw.githubusercontent.com/antoniaelek/one-liners/master/img/readme-1.png)
 
 
 
