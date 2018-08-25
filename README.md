@@ -1,5 +1,6 @@
-# One-Liners Browser New Tab Extension
+![logo](https://raw.githubusercontent.com/antoniaelek/one-liners/master/img/logo-text.png)
 
+- Browser New Tab extension
 - Displays a random funny quote and current date and time
 - Totally inspired by [Momentum](https://momentumdash.com/)
 - Wallpapers used here are from [Unplash](https://source.unsplash.com/)
