@@ -67,3 +67,7 @@
     margin-right: auto;
     width: 75%;
 }
+.with-margin{
+	margin: 10px;
+	padding: 10px;
+}
