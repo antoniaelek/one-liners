@@ -1,6 +1,6 @@
 # <img src="https://raw.githubusercontent.com/antoniaelek/one-liners/master/img/logo-text.png" alt="chrome" width="400"/>
 
-*One-Liners* is a browser New Tab extension that displays a random funny quote and current date and time. It is totally inspired by [Momentum](https://momentumdash.com/), but it is much simpler in funcionality. Wallpapers are from [Unplash](https://source.unsplash.com/). Supported browsers are Google Chrome and Mozilla Firefox.
+*One-Liners* is a browser New Tab extension that displays a random funny quote and current date and time. It is totally inspired by [Momentum](https://momentumdash.com/), but it is much simpler in functionality. Wallpapers are from [Unplash](https://source.unsplash.com/). Supported browsers are Google Chrome and Mozilla Firefox.
 
 ### Get it
 
